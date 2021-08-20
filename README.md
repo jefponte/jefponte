@@ -5,6 +5,3 @@ Full stack developer with six years of experience. Knowledge and experience with
 
 
 @ me either on [Twitter](https://twitter.com/jefponte), [Instagram](https://instagram.com/jefponte) or [Linkedin](https://linkedin.com/in/jefponte) 
-
-
-<img align="left" src="https://github-readme-stats.vercel.app/api?username=jefponte&count_private=true&show_icons=true" />
