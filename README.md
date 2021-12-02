@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-Full stack developer with seven years of experience. Knowledge and experience with Java, Javascript, PHP, Python and relational database modeling. Clean code fan, ease of learning new programming languages.
+Full stack developer with seven years of experience. Knowledge and experience with Java, Javascript, PHP, Python, React JS and relational database modeling. Clean code fan, ease of learning new programming languages.
 
 
 
