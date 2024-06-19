@@ -14,4 +14,3 @@ jobs:
         server: jefponte.com
         username: main@jefponte.com
         password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: public_html/
