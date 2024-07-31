@@ -1,68 +1,58 @@
-import "./App.css"
-import { Counter } from "./features/counter/Counter"
-import { Quotes } from "./features/quotes/Quotes"
-import logo from "./logo.svg"
+import { Box } from "@mui/material";
+import { Route, Routes } from "react-router-dom";
+import { Layout } from "./components/Layout";
+import { ProtectedRoute } from "./components/ProtectedRoute";
+import { Login } from "./features/auth/Login";
+import { OrganizationCreate } from "./features/organizations/OrganizationCreate";
+import { OrganizationEdit } from "./features/organizations/OrganizationEdit";
+import { OrganizationList } from "./features/organizations/OrganizationList";
+import { AuthProfile } from "./features/auth/AuthProfile";
+import { NotFoundCard } from "./components/NotFoundCard";
+import { PatientList } from "./features/patients/PatientList";
+import { PatientEdit } from "./features/patients/PatientEdit";
+import { PatientCreate } from "./features/patients/PatientCreate";
+import { UserList } from "./features/users/UserList";
+import { UserEdit } from "./features/users/UserEdit";
 
-const App = () => {
+
+
+
+function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <Quotes />
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://reselect.js.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Reselect
-          </a>
-        </span>
-      </header>
-    </div>
+    <Box
+      component="main"
+      sx={{
+        height: "100vh"
+      }}
+    >
+      <Layout>
+        <Routes>
+          <Route path="/" element={<ProtectedRoute><PatientList /></ProtectedRoute>} />
+
+
+          <Route path="/organizations" element={<ProtectedRoute><OrganizationList /></ProtectedRoute>} />
+          <Route path="/organizations/edit/:id" element={<ProtectedRoute><OrganizationEdit /></ProtectedRoute>} />
+          <Route path="/organizations/create" element={<ProtectedRoute><OrganizationCreate /></ProtectedRoute>} />
+
+          <Route path="/patients" element={<ProtectedRoute><PatientList /></ProtectedRoute>} />
+          <Route path="/patients/edit/:id" element={<ProtectedRoute><PatientEdit /></ProtectedRoute>} />
+          <Route path="/patients/create" element={<ProtectedRoute><PatientCreate /></ProtectedRoute>} />
+
+
+          <Route path="/profile" element={<ProtectedRoute><AuthProfile /></ProtectedRoute>} />
+
+
+
+
+          <Route path="/login" element={<Login />} />
+
+          <Route path="*" element={<NotFoundCard/>} />
+        </Routes>
+      </Layout>
+
+    </Box>
+
   )
 }
 
-export default App
+export default App;
