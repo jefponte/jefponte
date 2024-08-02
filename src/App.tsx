@@ -25,7 +25,8 @@ function App() {
         height: "100vh"
       }}
     >
-      <Layout>
+      <h1>Ola, mundo!</h1>
+      {/* <Layout>
         <Routes>
           <Route path="/" element={<ProtectedRoute><PatientList /></ProtectedRoute>} />
 
@@ -48,7 +49,7 @@ function App() {
 
           <Route path="*" element={<NotFoundCard/>} />
         </Routes>
-      </Layout>
+      </Layout> */}
 
     </Box>
 
