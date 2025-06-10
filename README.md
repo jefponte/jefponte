@@ -1,3 +1,7 @@
+Full-stack developer since 2011 with solid expertise in PHP, JavaScript (React JS), Java and relational database modeling. Fast learner, always eager to master new technologies and deliver efficient, scalable solutions.
+
+
+
 | Skill Area                              | Technologies / Tools                                   | Proficiency  |
 | --------------------------------------- | ------------------------------------------------------ | ------------ |
 | **Programming Languages**               | PHP, JavaScript, TypeScript, Java, C, C++              | Advanced     |
