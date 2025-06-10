@@ -8,7 +8,7 @@ Full-stack developer since 2011 with solid expertise in PHP, JavaScript (React J
 | **APIs & Integrations**                 | RESTful, WebSockets                                    | Intermediate |
 | **Databases**                           | MySQL, PostgreSQL                                      | Advanced     |
 | **DevOps & CI/CD**                      | Docker, Docker Compose, GitHub Actions, Git            | Advanced     |
-| **Testing & Quality Assurance**         | PHPUnit, Pest, E2E (Cypress)                           | Intermediate |
+| **Testing & Quality Assurance**         | PHPUnit, Jest                                          | Intermediate |
 | **Agile Methodologies**                 | Scrum, Kanban                                          | Advanced     |
 | **Version Control & Collaboration**     | Git, GitLab, GitHub                                    | Advanced     |
 | **Embedded Systems & Microcontrollers** | Arduino, PIC18                                         | Intermediate |
